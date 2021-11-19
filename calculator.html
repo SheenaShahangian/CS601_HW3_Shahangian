@@ -7,6 +7,11 @@
     <meta name="description" content="This is a page that performs simple calculations 
     based on a user's prompt responses.">
     <title>Sheena's Simple Calculator - Assignment 3</title>
+    <!-- link to stylesheet -->
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- Use of Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700">
 </head>
 <body>
 
@@ -19,24 +24,27 @@
     <!-- main contents of the page, where the user can click the button to start the 
     calculator and trigger the alerts and prompts -->
     <main>
-        <!-- introduces the calculator and welcomes the site visitor -->
-        <h1>Welcome to the Simple Calculator!</h1>
 
-        <!-- explanation of what the calculator does -->
-        <p>
-            We are here for all of your math needs! Click the "Let's Begin" button below to get started, 
-            and we'll add up any two numbers for you. We'll even let know if the numbers you've added sum 
-            up to a large number or not.
-        </p>
-        <p>
-            If you're feeling particularly adventurous, we also give you the option to go for as many 
-            rounds as you'd like. Ready to get started and see what exciting math lies ahead for you? All 
-            you have to do is click the button below.
-        </p>
+        <section class="calculator_intro_section">
+            <!-- introduces the calculator and welcomes the site visitor -->
+            <h1>Welcome to the Simple Calculator!</h1>
 
-        <!-- button that prompts the first alert that begins to calculation process -->
-        <button type="button" class="begin_button" onclick="calculatorRunner()">Let's Begin</button>
+            <!-- explanation of what the calculator does -->
+            <p>
+                We are here for all of your math needs! Click the "Let's Begin" button below to get started, 
+                and we'll add up any two numbers for you. We'll even let know if the numbers you've added sum 
+                up to a large number or not.
+            </p>
+            <p>
+                If you're feeling particularly adventurous, we also give you the option to go for as many 
+                rounds as you'd like. Ready to get started and see what exciting math lies ahead for you? All 
+                you have to do is click the button below.
+            </p>
 
+            <!-- button that prompts the first alert that begins to calculation process -->
+            <button type="button" class="begin_button" onclick="calculatorRunner()">Let's Begin</button>
+
+        </section>
 
     </main>
 
@@ -49,7 +57,7 @@
 
     </footer>
 
-    <!-- JavaScript for the page -->
+    <!-- JavaScript for the page, placed at bottom, as recommended by textbook -->
     <script src="js/addition.js"></script>
     
 </body>

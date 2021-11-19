@@ -1,0 +1,66 @@
+/* Style of the body of the page, which should take up the browser window */
+body {
+    background-color: #f1efe1; /* the background of all pages should be an off-white */
+    width: 100%;
+    margin: 0;
+}
+
+/* Style of the calculator intro section */
+.calculator_intro_section {
+    margin: auto;
+    text-align: center;
+}
+
+/* Style of h1 */
+h1 {
+    color: #bc6c25;
+    font-family: "Playfair Display", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 900;
+    font-size: 2.7rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 2rem 1rem 0.2rem 1rem;
+    padding: 1rem;
+}
+
+/* Style of paragraphs of text */
+p {
+    color: #283618;
+    font-family: "Quicksand", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Style of the button that triggers the program */
+.begin_button {
+    color: #f1efe1;
+    background-color: #283618;
+    font-family: "Quicksand", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem; /* add breathing room to top of the button */
+    margin-bottom: 1rem; /* add breathing room to bottom of the button */
+    padding: 1rem;
+    border-radius: 2rem;
+    border-color: #283618;
+}
+
+/* Style of the page's footer */
+footer p {
+    font-family: "Playfair Display", Helvetica, Arial, "san serif"; /* fallback fonts set */
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
