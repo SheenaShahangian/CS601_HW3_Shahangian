@@ -5,9 +5,18 @@ body {
     margin: 0;
 }
 
+/* Style for the calculator logo, which is centered at the top */
+.logo_image {
+    display: block; /*rather than inline */
+    margin: 3rem auto; /* center the logo on the page */
+    width: 100px; 
+    height:100px;
+}
+
 /* Style of the calculator intro section */
 .calculator_intro_section {
     margin: auto;
+    width: 85%; /* DO NOT take up full width of the page */
     text-align: center;
 }
 
@@ -15,11 +24,10 @@ body {
 h1 {
     color: #bc6c25;
     font-family: "Playfair Display", Helvetica, Arial, "san serif"; /* fallback fonts set */
-    font-weight: 900;
+    font-weight: 900; /* heavier weight for h1 */
     font-size: 2.7rem;
     line-height: 3rem;
     text-transform: capitalize;
-    text-align: center;
     margin: 2rem 1rem 0.2rem 1rem;
     padding: 1rem;
 }
@@ -28,10 +36,9 @@ h1 {
 p {
     color: #283618;
     font-family: "Quicksand", Helvetica, Arial, "san serif"; /* fallback fonts set */
-    font-weight: 300;
+    font-weight: 300; /* lighter weight for paragraphs of text */
     font-size: 1.2rem;
-    line-height: 1.3rem;
-    text-align: center;
+    line-height: 1.3rem; /* breathing room between lines */
     margin-left: 5rem;
     margin-right: 5rem;
 }
@@ -45,7 +52,6 @@ p {
     font-size: 1.3rem;
     line-height: 1.4rem;
     text-transform: uppercase;
-    text-align: center;
     margin-top: 1rem; /* add breathing room to top of the button */
     margin-bottom: 1rem; /* add breathing room to bottom of the button */
     padding: 1rem;
@@ -58,7 +64,7 @@ p {
 footer p {
     font-family: "Playfair Display", Helvetica, Arial, "san serif"; /* fallback fonts set */
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase; /* make footer copyright more noticeable */
     font-size: 1.3rem;
     line-height: 1.5rem;
     text-align: center;

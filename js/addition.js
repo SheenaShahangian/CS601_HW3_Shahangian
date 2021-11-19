@@ -32,7 +32,8 @@ function addNumbers(numberOne, numberTwo) {
 This function is used to welcome the user, prompt them to 
 enter their name and valid numbers, and calls the addNumbers() 
 method that does the calculations and alerts about whether or 
-not the sum is a big or small number. 
+not the sum is a big or small number.  This is where the main 
+logic of the program exists.
 */
 function calculatorRunner() {
 
