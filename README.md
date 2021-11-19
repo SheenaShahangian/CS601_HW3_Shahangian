@@ -34,4 +34,5 @@ I've attempted to add some new features beyond the standard requirements listed 
 * I have performed checks to ensure the input is a valid number, using the isNan() method.
 * I have used the onclick event for the "Let's Begin" button to start the program. This triggers the calculatorRummer() method that contains the main logic of the program.
 * I have tested my program in Google Chrome, Firefox, and Safari to ensure it works as expected in multiple browsers.
+* Per the professor's recommendation, I have opted to use let rather than var for declaring my variables, a I wanted to experiment with having block level scope, which var does not offer.
 * I have thoroughly commented all of my code, to make it easy to understand and come back to in the future.
