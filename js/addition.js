@@ -4,13 +4,33 @@ Author: Sheena Shahangian
 */
 
 
+/*
+This function welcomes the user and prompts them for their 
+name in order to provide a personalized welcome message.
+*/
+function welcomeUser() {
+    // welcome visitor with an alert
+    alert("Welcome to the Simple Calculator by Sheena!");
+
+    // prompt the user for their name and save it
+    let usersName = prompt("What is your name?");
+
+    // if the name is not inputted, prompt again
+    while (usersName.length < 1) {
+        usersName = prompt("You didn't enter a name. What is your name?");
+    }
+
+    // welcome the user with their name now
+    alert(`Welcome ${usersName}!`);
+}
+
+
 /* 
 This function performs the calculation of adding 
 the two numbers and then providing an alert with that 
 sum value. 
 */
 function addNumbers(numberOne, numberTwo) {
-
     // perform sum calculation and alert the user of the sum
     let sum = numberOne + numberTwo;
     alert(`The sum of your two numbers is: ${sum}`);
@@ -42,19 +62,8 @@ function calculatorRunner() {
     let isCalculateAgain = true;
 
 
-    // WELCOME MESSAGES - ONLY DISPLAYED ONCE PER RUN
-    // --------------------------------------------------------
-
-    // welcome visitor with an alert
-    alert("Welcome to the Simple Calculator by Sheena!");
-
-    // prompt the user for their name and save it
-    let usersName = prompt("What is your name?");
-
-    // welcome the user with their name now
-    alert(`Welcome ${usersName}!`);
-
-    // --------------------------------------------------------
+    // welcome messages, only displayed once per run
+    welcomeUser();
 
 
     // while isCalculateAgain is true, the user wants to keep getting 
@@ -93,7 +102,7 @@ function calculatorRunner() {
         }
         else {
             isCalculateAgain = false;
-            alert("Thanks for using our program. We see you don't want to play again. Goodbye!")
+            alert("Thanks for using our program. We see you don't want to play again. Goodbye!");
         }
     }
 }
