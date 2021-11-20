@@ -93,16 +93,20 @@ function calculatorRunner() {
 
 
         // ask user if they want to add numbers again (play a new round)
-        let playAgain = prompt("Do you want to add two numbers again? Type 'y' for yes " + 
-        "or anything else for no.");
+        let playAgain = prompt("Do you want to add two numbers again? Type 'yes' for yes " + 
+        "or 'no' for no.");
 
         // if user wants to play again, continue to next round
-        if (playAgain.toLowerCase() === "y") {
+        if (playAgain.toLowerCase() === "yes") {
             continue;
+        }
+        else if (playAgain.toLowerCase() === "no") {
+            isCalculateAgain = false;
+            alert("Thanks for using our program. We see you don't want to play again. Goodbye!");
         }
         else {
             isCalculateAgain = false;
-            alert("Thanks for using our program. We see you don't want to play again. Goodbye!");
+            alert("Not a valid answer. We're assuming you don't want to play again. Goodbye!");
         }
     }
 }
