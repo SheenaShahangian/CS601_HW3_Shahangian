@@ -1,6 +1,5 @@
 /* 
 This JS file contains the logic for our calculator.
-Author: Sheena Shahangian
 */
 
 
@@ -71,21 +70,21 @@ function calculatorRunner() {
     while (isCalculateAgain) {
 
         // ask user for their first number entry and save it to a variable
-        let numberOne = parseInt(prompt("Please enter a first number: "));
+        let numberOne = parseFloat(prompt("Please enter a first number: "));
 
         // if the number is not a valid numerical entry, prompt again on loop
-        while (isNaN(numberOne)) {
+        while (!(/^-?(0|[1-9]\d*)(\.\d+)?$/.test(numberOne))) {
             alert("Not a valid numerical entry, please try again: ");
-            numberOne = parseInt(prompt("Please enter a first number: "));
+            numberOne = parseFloat(prompt("Please enter a first number: "));
         }
         
         // ask user for their second number entry and save it to a variable
-        let numberTwo = parseInt(prompt("Please enter a second number: "));
+        let numberTwo = parseFloat(prompt("Please enter a second number: "));
 
         // if the number is not a valid numerical entry, prompt again on loop
-        while (isNaN(numberTwo)) {
+        while (!(/^-?(0|[1-9]\d*)(\.\d+)?$/.test(numberTwo))) {
             alert("Not a valid numerical entry, please try again: ");
-            numberTwo = parseInt(prompt("Please enter a second number: "));
+            numberTwo = parseFloat(prompt("Please enter a second number: "));
         }
 
         // call the addNumbers() method to perform our calculations
