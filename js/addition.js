@@ -12,7 +12,7 @@ function welcomeUser() {
     alert("Welcome to the Simple Calculator by Sheena!");
 
     // prompt the user for their name and save it
-    let usersName = prompt("What is your name?");
+    let usersName = prompt("What is your name?").trim();
 
     // if the name is not inputted, prompt again
     while (usersName.length < 1) {

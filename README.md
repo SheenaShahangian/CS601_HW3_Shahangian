@@ -31,6 +31,7 @@ Once you click the "Let's Begin" button on "calculator.html", I have followed th
 
 I've attempted to add some new features beyond the standard requirements listed in the rubric. These include: 
 * Using CSS, I have styled the landing page that the user goes to, so they are welcomed to a pretty page, rather than immediately encountering an alert upon opening the page. Per my research and the professor's comment in class, it looks like alerts cannot be styled. Thus, I have not styled those.
+* I have performed validation on the name the user inputs in the prompt, so that it won't accept no input or simple whitespace input (I have trimmed whitespace at the beginning and end of an input using trim()). However, I do want to accept non-letter names, as I see them more as usernames, where numbers are allowed.
 * I have performed checks to ensure the input is a valid number. I originally had used the isNaN() method to do this, but per the recommendation in facilitation, I made an attempt at using regular expressions instead. The regular expression I used can be attributed to this source: https://newbedev.com/decimal-or-numeric-values-in-regular-expression-validation and was tested using the resource posted in the resources section in Blackboard.
 * I have used the onclick event for the "Let's Begin" button to start the program. This triggers the calculatorRunner() method that contains the main logic of the program.
 * I have tested my program in Google Chrome, Firefox, and Safari to ensure it works as expected in multiple browsers.
